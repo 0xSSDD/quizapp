@@ -4,22 +4,26 @@ import 'dart:io' show Platform;
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget{
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Hello World'),),
-        body: Center(child: Icon(Icons.cake),),
-        floatingActionButton: FloatingActionButton(onPressed: () {},),
-        drawer: Drawer(),
-        bottomNavigationBar: BottomNavigationBar(items: [
-          BottomNavigationBarItem(label: 'foo', icon: Icon(Icons.call)),
-          BottomNavigationBarItem(label: 'bar', icon: Icon(Icons.cached))
-        ]),
+        body: Center(
+            child: Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  color: Colors.blue,
+                  border: Border.all(width: 5),
+                  boxShadow: [
+                    BoxShadow(offset: Offset(40, 40), color: Colors.pink),
+                    BoxShadow(offset: Offset(20, 20), color: Colors.yellow),
+                  ],
+                  gradient: LinearGradient(colors: [Colors.yellow, Colors.pink])
+              ),
+            )
+        ),
       ),
     );
-
   }
 }

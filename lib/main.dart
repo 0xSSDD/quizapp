@@ -45,7 +45,7 @@ class _CoolBoxState extends State<CoolBox> {
         color: color,
         width: width,
         height: height,
-        child: FlatButton(
+        child: TextButton(
           child: Text('Random'),
           onPressed: () {
 

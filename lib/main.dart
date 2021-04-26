@@ -9,20 +9,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-            child: Container(
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  color: Colors.blue,
-                  border: Border.all(width: 5),
-                  boxShadow: [
-                    BoxShadow(offset: Offset(40, 40), color: Colors.pink),
-                    BoxShadow(offset: Offset(20, 20), color: Colors.yellow),
-                  ],
-                  gradient: LinearGradient(colors: [Colors.yellow, Colors.pink])
-              ),
-            )
-        ),
+          body: Container(
+              color: Colors.blue,
+              padding: EdgeInsets.all(16),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Icon(Icons.cake, color: Colors.white, size: 50,),
+                  Icon(Icons.cake, color: Colors.white, size: 100,),
+                  Icon(Icons.cake, color: Colors.white, size: 200,),
+                ],
+              )
+          )
       ),
     );
   }

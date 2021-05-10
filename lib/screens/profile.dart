@@ -12,7 +12,6 @@ class ProfileScreen extends StatelessWidget {
       body: Center(
         child: Text('profiles this app...'),
       ),
-      bottomNavigationBar: AppBottomNav(),
     );
   }
 }

@@ -12,7 +12,6 @@ class AboutScreen extends StatelessWidget {
       body: Center(
         child: Text('About this app...'),
       ),
-      bottomNavigationBar: AppBottomNav(),
     );
   }
 }

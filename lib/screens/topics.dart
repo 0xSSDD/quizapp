@@ -10,7 +10,7 @@ class TopicsScreen extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       body: Center(
-        child: Text('About this app...'),
+        child: Text('Topics...'),
       ),
       bottomNavigationBar: AppBottomNav(),
     );
